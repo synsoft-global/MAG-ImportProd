@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SYN_Import>
+            <version>0.0.1</version>
+        </SYN_Import>
+	</modules>	
+	<global>
+		<helpers>
+			<syn_import>
+				<class>SYN_Import_Helper</class>
+			</syn_import>
+        </helpers>
+
+		<blocks>
+			<syn_import>
+				<class>SYN_Import_Block</class>
+			</syn_import>
+		</blocks>
+	</global>
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<syn_import after="Mage_Adminhtml">SYN_Import_Adminhtml</syn_import>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+	<adminhtml>
+		<layout>
+			<updates>
+				<syn_import>
+					<file>importtag.xml</file>
+				</syn_import>
+			</updates>
+		</layout>
+	</adminhtml>	
+</config>

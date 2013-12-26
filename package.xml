@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>SYN_Import</name>
+    <version>1.0.0.1</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension provide you help of product tag import in bulk. </summary>
+    <description>This extension will support only (.csv) format.First column have tag name comma separated value.Second column will have only product SKU corresponding. Go to -&gt; System -&gt; Import/Export -&gt; Import-Product tag</description>
+    <notes>This extension provide you help of product tag import in bulk. </notes>
+    <authors><author><name>Ajay</name><user>Synsoft</user><email>ajaym.synsoft@gmail.com</email></author></authors>
+    <date>2013-12-25</date>
+    <time>11:15:24</time>
+    <contents><target name="magecommunity"><dir name="SYN"><dir name="Import"><dir name="Block"><dir name="Adminhtml"><file name="Import.php" hash="b1ca0cd2b922acb1f5b0dcde365465c5"/></dir></dir><dir name="Helper"><file name="Data.php" hash="3b92f9fafa289e57278793fb1be5cbc3"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="ImportController.php" hash="64daa707a39f7a14c52dd2d6a2770f86"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="bf832a35e282bdb81b5df0c8eea8df10"/><file name="config.xml" hash="13d4a32ecd2bf848344b291b2b64341f"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="importtag.xml" hash="94e4810a8d54e5ff13c03bbad289dba5"/></dir><dir name="template"><dir name="importtag"><file name="importtag.phtml" hash="f7a6990120853d1221e26734e06d9946"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SYN_Import.xml" hash="f15197416da8c44c0a480670c63e7372"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.3</min><max>5.2.14</max></php></required></dependencies>
+</package>

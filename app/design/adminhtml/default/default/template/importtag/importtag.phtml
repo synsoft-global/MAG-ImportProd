@@ -1,0 +1,36 @@
+<?php
+/**
+ * import template
+ *
+ * @see Santhosh_Import_Block_Adminhtml_Import
+ */
+ $formKey = Mage::getSingleton('core/session')->getFormKey();
+?>
+
+<div class="import">
+	<form enctype="multipart/form-data" method="post" action="<?php echo $this->getUrl('*/*/savetag') ?>" id="edit_form" target=""><div>
+	<input type="hidden" value="<?php echo  $formKey ; ?>" name="form_key"></div><div class="entry-edit-head">
+    <h4 class="icon-head head-edit-form fieldset-legend"><?php echo $this->__('Import Settings') ?></h4>
+    <div class="form-buttons"></div>
+</div>
+    <div id="base_fieldset" class="fieldset ">
+    <div class="hor-scroll">
+                        <table cellspacing="0" class="form-list">
+            <tbody>
+     
+
+<tr>
+        <td class="label"><label for="import_file"><?php echo $this->__('Select File to Import') ?> <span class="required">*</span></label></td>
+    <td class="value">
+        <input type="file" class="required-entry validation-passed" title="Select File to Import" value="" name="import_file" id="import_file">            </td>
+    </tr>
+	<tr>
+	 <td>
+	 <input type="submit" name="submit" value="<?php echo $this->__('submit') ?>" /></td>
+	</tr>
+            </tbody>
+        </table>
+            </div>
+        </div>
+</form>
+</div>
